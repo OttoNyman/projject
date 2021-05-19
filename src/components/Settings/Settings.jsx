@@ -3,7 +3,7 @@
 const Settings=(props)=>{
     return (
         <div>
-            Dialogs
+            Nastroiki
         </div>
     )
 }
