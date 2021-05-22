@@ -18,11 +18,17 @@ let state = {
             { id: 1, name: "Sasha" },
             { id: 2, name: "Serezha" },
             { id: 3, name: "Sveta" },
-            { id: 4, name: "Stepan" },
+            { id: 4, name: "Stephan" },
             { id: 5, name: "Slavik" },
         ]
     },
-    sidebar: {}
+    sidebar: {
+        friends: [
+            { id: 1, name: "Sasha" },
+            { id: 2, name: "Serezha" },
+            { id: 3, name: "Stephan" }
+        ]
+    }
 }
 
 export default state;

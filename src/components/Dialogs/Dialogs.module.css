@@ -9,7 +9,7 @@
 }
 
 .dialogItems .active {
-    color: gold;
+  color: gold;
 }
 
 .messages {
@@ -18,4 +18,9 @@
 
 .messages .message {
   color: white;
+}
+
+.dialog img {
+  width: 50px;
+  border-radius: 30px;
 }

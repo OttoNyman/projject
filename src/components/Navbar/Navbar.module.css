@@ -11,3 +11,8 @@
 .item a.activeLink {
   color: gold;
 }
+
+.friends {
+  font-size: 30px;
+  color: brown;
+}
