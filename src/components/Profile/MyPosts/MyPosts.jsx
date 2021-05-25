@@ -1,8 +1,10 @@
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
 import React from "react";
+import { addPostActionCreator, updateNewPostTextChangeActionCreator } from './../../../redux/state';
 
-const MyPosts =  (props) => {
+
+const MyPosts = (props) => {
   let postsElements = props.posts.map((p) => (
     <Post message={p.message} likeCounts={p.likesCount} />
   ));
@@ -11,14 +13,14 @@ const MyPosts =  (props) => {
 
   //ф-я, кот прикрепим к событию онклик
   let addPost = () => {
-    props.dispatch({type: 'ADD-POST'});
+    props.dispatch(addPostActionCreator());
   };
 
   let onPostChange = () => {
-    let text=newPostElement.current.value;
+    let text = newPostElement.current.value;
     //теперь переменную text засовываем в ...
-    let action = { type: 'UPDATE-NEW-POST-TEXT', newText: text };
-    props.dispatch (action);
+    let action = updateNewPostTextChangeActionCreator(text);
+    props.dispatch(action);
   };
 
   return (

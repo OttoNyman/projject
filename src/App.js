@@ -16,10 +16,7 @@ const App = (props) => {
       <Navbar />
       <div className="app-wrapper-content">
         {/* можно использовать рендер, можно компонент (если компонент - сложно прокинуть пропсы) */}
-        <Route
-          path="/dialogs"
-          render={() => <Dialogs state={props.state.dialogsPage} />}
-        />
+        <Route path="/dialogs" render={() => <Dialogs store={props.store} />} />
         <Route
           path="/profile"
           render={() => (
